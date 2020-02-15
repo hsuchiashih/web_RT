@@ -1,0 +1,548 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 42.8%
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/** {
+    box-sizing: border-box;
+    }*/
+
+.primary-bg-color-1 {
+    background-color: #FFEECA;
+}
+
+.primary-bg-color-2 {
+    background-color: #F9D4D8;
+}
+
+.primary-bg-color-3 {
+    background-color: #916134;
+}
+
+
+/* **********首頁介紹區塊 intro_area********** */
+
+
+/* **********首頁介紹區塊 intro_area********** */
+
+
+/* **********首頁介紹區塊 intro_area********** */
+
+.intro_area {
+    display: block;
+    position: absolute;
+    z-index: 8;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 40%;
+}
+
+.intro_right {
+    right: 15%;
+}
+
+.intro_left {
+    left: 15%;
+}
+
+.intro_area h1 {
+    color: #6A3906;
+    font-size: 7vmin;
+}
+
+.intro_button {
+    display: block;
+    width: 22vmin;
+    height: 2.5vmin;
+    padding: 1.8vmin;
+    font-size: 2vmin;
+    text-align: center;
+    color: #6A3906;
+    border: 0.2rem solid #6A3906;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro_button:hover {
+    background-color: #6A3906;
+    color: white;
+}
+
+.btn_left {
+    margin-right: auto;
+}
+
+.btn_right {
+    margin-left: auto;
+}
+
+
+/* **********漂浮小圖********** */
+
+
+/* **********漂浮小圖********** */
+
+
+/* **********漂浮小圖********** */
+
+.r_strawberry {
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    right: 15%;
+    width: 8%;
+}
+
+.r_coffee_beans {
+    position: absolute;
+    z-index: 4;
+    top: 75%;
+    right: 10%;
+    width: 2%;
+}
+
+.l_orange {
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left: 18%;
+    width: 8%;
+}
+
+.l_wheat {
+    position: absolute;
+    z-index: 4;
+    top: 75%;
+    left: 6%;
+    width: 22%;
+}
+
+
+/* **********首頁導覽********** */
+
+
+/* **********首頁導覽********** */
+
+
+/* **********首頁導覽********** */
+
+.navbar {
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    justify-content: space-between;
+    top: 8%;
+    width: 26vmin;
+    left: 15%;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #916134;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: #55381d;
+}
+
+
+/* **********首頁icon********** */
+
+
+/* **********首頁icon********** */
+
+
+/* **********首頁icon********** */
+
+.nav_icon {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    width: 18vmin;
+    z-index: 8;
+}
+
+.nav_icon i {
+    color: #916134;
+}
+
+.nav_icon i:hover {
+    color: #55381d;
+}
+
+
+/*子類別*/
+
+.child {
+    overflow: hidden;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1000ms;
+}
+
+
+/* **********左右偵測區塊********** */
+
+
+/* **********左右偵測區塊********** */
+
+
+/* **********左右偵測區塊********** */
+
+.hit-test {
+    display: block;
+    transition: 1000ms;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    opacity: 0.5;
+}
+
+.hit-test-left {
+    left: 0;
+}
+
+.hit-test-right {
+    right: 0;
+}
+
+
+/* **********美味三原則********** */
+
+
+/* **********美味三原則********** */
+
+
+/* **********美味三原則********** */
+
+#three_principles {
+    margin: 8%;
+    text-align: center;
+}
+
+#three_principles h2 {
+    font-size: 7vmin;
+    margin: 0;
+    color: #6A3906;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#three_principles h3 {
+    font-size: 4vmin;
+    margin: 0;
+    letter-spacing: 3.5vmin;
+    margin-left: 3vmin;
+}
+
+
+/* **********內容區塊********** */
+
+
+/* **********內容區塊********** */
+
+
+/* **********內容區塊********** */
+
+.area-content {
+    display: flex;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1.4s;
+}
+
+.area-content.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.photo {
+    height: 50vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.photo>img {
+    width: 100%;
+}
+
+.area-content .text {
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.area-content .title {
+    display: block;
+    text-align: center;
+    color: #40210F;
+    background-color: #FFC9CC;
+    font-size: 3em;
+    margin: 0 140px;
+}
+
+.area-content p {
+    /* border-top: 1px solid black; */
+    padding: 0 150px;
+    font-size: 1.5em;
+}
+
+.area-content>div {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.area-content:nth-child(odd)>.photo {
+    order: 2;
+}
+
+.area-content:nth-child(odd)>.text>.title {
+    background-color: #FFEECA;
+    order: 2;
+}
+
+.purest {
+    /* 
+    background-image: url("../images/banner-04.jpg");
+    background-position: left center; */
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/banner-04.jpg");
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-position: center center;
+    margin-top: 164px;
+    margin-bottom: 120px;
+}
+
+.purest_text {
+    position: absolute;
+    width: 70%;
+    max-width: 1240px;
+    text-align: center;
+    top: 40%;
+    left: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #6A3906;
+    padding: 2% 0;
+}
+
+.purest_text h2 {
+    font-size: 3em;
+    border-bottom: 2px solid #6A3906;
+    margin: 0 17.5%;
+}
+
+.purest_text h3 {
+    font-size: 4vmin;
+    margin: 0;
+}
+
+.purest img {
+    width: 100%;
+}
+
+
+/*關於*/
+
+#about_rt {
+    position: relative;
+}
+
+.left_bg {
+    position: absolute;
+    width: 35%;
+    height: 86%;
+    left: 7%;
+    background-color: #FFECC8;
+    z-index: -1;
+}
+
+.about_rt_container {
+    max-width: 1140px;
+    width: 92%;
+    margin: auto;
+    display: flex;
+}
+
+.about_rt_item {
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.about_rt_item .title {
+    color: #40210F;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.about_rt_item p {
+    font-size: 1.5em;
+}
+
+
+/*聯絡我們*/
+
+#contact_us {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.right_bg {
+    position: absolute;
+    width: 35%;
+    height: 86%;
+    right: 7%;
+    background-color: #FFC9CC;
+    z-index: -1;
+}
+
+.contact_us_container {
+    max-width: 1140px;
+    width: 92%;
+    margin: auto;
+    display: flex;
+}
+
+.contact_us_item {
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.contact_us_item .title {
+    color: #40210F;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    border: 1px solid #black;
+}
+
+.contact_us_item p {
+    font-size: 1.5em;
+}
+
+
+/* **********footer********** */
+
+
+/* **********footer********** */
+
+
+/* **********footer********** */
+
+.container {
+    display: flex;
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.footer {
+    height: 240px;
+    display: flex;
+}
+
+.footer-link {
+    /* float: left; */
+    width: 55%;
+    padding-left: 20px;
+    /* padding-top: 85px; */
+    align-items: center;
+}
+
+.footer-link h4 {
+    padding-left: 40px;
+    letter-spacing: .1em;
+    color: white;
+}
+
+.footer-link ul {
+    display: flex;
+    margin: 5px 0px;
+}
+
+.footer-link ul li {
+    /* margin-top: 5px; */
+    list-style-type: none;
+    /* background-color: #613E00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link li+li::before {
+    content: '|';
+    color: white;
+    display: inline-block;
+    margin: 0.4em 1em;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: .1em;
+}
+
+.footer-link ul li a:hover {
+    color: #FFEECA;
+}
+
+.footer-list-item {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+.fa-facebook-square:hover,
+.fa-instagram:hover {
+    color: #FFEECA;
+}
+
+.copyright {
+    /* width: 100vw; */
+    background-color: #613E00;
+    text-align: center;
+    line-height: 40px;
+    color: #fff5e0;
+    font-size: 12px;
+}
