@@ -47,7 +47,7 @@ header {
 .container {
     display: flex;
     max-width: 1140px;
-    width: 90%;
+    width: 80%;
     margin: auto;
     position: relative;
 }
@@ -70,18 +70,14 @@ header {
 
 .navbar>ul {
     list-style-type: none;
-    margin: 0px;
+    margin: 60px 0px 0px 0px;
     padding: 0px;
-   
     display: flex;
 }
 
 .navbar>ul>li {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 20px; 
-    padding-right: 20px;
-}  
+    padding: 20px;
+}
 
 .navbar>ul>li>a {
     text-decoration: none;
@@ -93,6 +89,7 @@ header {
     color: rgb(253, 185, 39);
 }
 
+
 .nav-icon {
     position: absolute;
     right: 0px;
@@ -102,8 +99,9 @@ header {
     display: inline-block;
     vertical-align: middle;
     margin: 10px;
-    padding: 16.02px 0px;
+    padding: 12px 0px;
 }
+
 .fa-shopping-cart,
 .fa-question-circle {
     color: #6A3906;
@@ -113,6 +111,7 @@ header {
 .fa-question-circle:hover {
     color: rgb(253, 185, 39);
 }
+
 
 .block {
     background-color: burlywood;
@@ -127,6 +126,18 @@ header {
     width: 50%;
 }
 
+@media screen and (min-width: 768px){
+    .container {
+        width: 90%;
+    }
+
+    .navbar>ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        display: flex;
+    }
+}
 
 
   /* =======================head-area============= */
@@ -184,8 +195,8 @@ header {
 }
 
 .info p {
-    font-size: 0.9em;
-    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
     margin-bottom: 1.3%;
 }
 
@@ -488,9 +499,6 @@ position: absolute;
   }
 
 
-
-  
-
   .index-about-desc-title,
   .index-about-desc-tagline-sub,
   .index-about-desc-text {
@@ -611,9 +619,6 @@ position: absolute;
     box-shadow:7px 7px 20px rgb(0, 0, 0, 0.1);
   }
 
-
- 
-
   .index-product-desc {
     width: 90%;
     background-color: #FFF1CD;
@@ -649,7 +654,7 @@ position: absolute;
  }
 
   .product-child .photo-six {
-    margin-top: 133%;
+    margin-top: 180%;
     padding-top: 20%;
     padding-bottom: 120%;
     align-self: flex-start;
@@ -732,17 +737,66 @@ button:focus {
  }
 
 
+ 
+  .about-us{
+    position: absolute;
+    bottom: 17%;
+    /* background-color: rgb(150, 35, 35); */
+    max-width: 1140px;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:-11%;   
+  }
+
+  
+  .product-child .circle-one p ,.product-child .circle-two p{
+    display: block;
+    font-size: 2vmax;
+    padding-top: 26%;
+    color: #BD914D;
+    font-weight: 600;
+  }
+   
+
+
+   .about-us>div p{
+    margin-bottom: 5%;
+    width: 90% ;
+    font-weight: 500;
+    font-size: 1.5vmax;
+  }
+
+
  @media screen and (min-width: 568px){
+  .product-child .circle-one p ,.product-child .circle-two p{ 
+    font-size: 4vmax; 
+  }
+
+
   .index-product-desc {
     width:60% ;
+  }
+
+    .about-us{
+    position: absolute;
+    bottom: 10%;
+    /* background-color: rgb(150, 35, 35); */
+    max-width: 1140px;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0%;   
   }
  }
   @media screen and (min-width: 768px){
     .product-container {
       max-width: 1140px;
-      margin: auto;
-  
-      
+      margin: auto;  
     }
 
     .index-product-desc {
@@ -773,9 +827,10 @@ button:focus {
 
     .product-child .photo-six {
     margin-top: 20%;
+    /* box-shadow: 7px 7px 20px rgb(0, 0, 0, 0.1); */
    }
 
- 
+
   }
 
 
@@ -783,6 +838,17 @@ button:focus {
     
     .index-product-desc-text p {
       font-size:  1.2vmax;
+    }
+
+    .product-child .circle-one p ,.product-child .circle-two p{ 
+    font-size: 2vmax; 
+    }
+
+    .about-us>div p{
+    margin-bottom: 5%;
+    width: 90% ;
+    font-weight: 500;
+    font-size: 1.2vmax;
     }
 
   }
@@ -799,22 +865,6 @@ button:focus {
 
   }
 
-
-
-
-
-
-
-
-
-
- 
- 
-  
-
- 
-
- 
   .product-child .circle-one{
     background-color: rgb(255, 255, 255);
     box-shadow:3px 3px 10px rgb(0, 0, 0, 0.1) ;
@@ -839,17 +889,6 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-
-
-
-  .product-child .circle-one p ,.product-child .circle-two p{
-    display: block;
-    font-size: 3vmax;
-    padding-top: 26%;
-    color: #BD914D;
-    font-weight: 600;
   }
 
   .product-child .circle-one span,
@@ -918,19 +957,6 @@ button:focus {
 
   }
 
-  .about-us{
-    position: absolute;
-    bottom: 10%;
-    /* background-color: rgb(150, 35, 35); */
-    max-width: 1140px;
-    height: 50px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
 
   .about-us>div{
     margin-top:13%;
@@ -943,15 +969,10 @@ button:focus {
     width: 90%;
     font-weight: 500;
     color:#6A3906;
-    font-size: 3vmax;
+    font-size: 2.5vmax;
   }
 
-  .about-us>div p{
-    margin-bottom: 5%;
-    width: 90% ;
-    font-weight: 500;
-    font-size: 1.5vmax;
-  }
+ 
 
   
 
@@ -971,12 +992,14 @@ button:focus {
   .cake-silder img{
       width: 100%;
   }
+
   .cake-silder p {
-    font-size: 1.5vmax;
+    font-size: 0.9vmax;
     text-align: center;
     letter-spacing: 0.1vw;
     padding-bottom: 2%;
   }
+
   .cake-silder a{
     text-decoration: none;
     color: gray;
@@ -996,17 +1019,13 @@ button:focus {
 
   .buy-button-block div{
     /* background-color: red; */
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    
+    align-items: center;   
   }
 
-
-
- 
   .buy-button-block div a{
     background-color: #6A3906;
     font-size: 1.5vmax;
@@ -1017,11 +1036,32 @@ button:focus {
     letter-spacing: 0.2vw;
     text-decoration: none;
     text-align: center;
-    padding: 9%;
+    padding: 12%;
     border-radius: 13px;
     /* 縮小時形狀會變 */
   }
 
+
+  @media screen and (min-width: 768px){
+
+   .cake-silder p {
+    font-size: 1.5vmax;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    padding-bottom: 2%;
+  }
+
+  .buy-button-block div{
+    /* background-color: red; */
+    width: 40%;  
+  }
+
+  .buy-button-block div a{
+    
+    padding: 9%;
+    /* 縮小時形狀會變 */
+    }
+  }
 /* =======================footer============== */
 /* ================================================*/
 /* =======================footer===============*/
@@ -1038,9 +1078,9 @@ button:focus {
     background-color: #916134;
 }
 
-.footer {
-    height: 200px;
-    display: flex;
+.footer{
+    display: none;
+    /* visibility: hidden; */
 }
 
 /* #footerlogo {
@@ -1062,9 +1102,7 @@ button:focus {
 .footer-link h4{
     color: white;
     letter-spacing: .1em;
-    font-size: 1em;
     /* padding-left: 40px; */
-    padding-bottom: 10px;
 }
 
 .footer-link ul {
@@ -1126,4 +1164,12 @@ button:focus {
     line-height: 40px;
     color: #fff5e0;
     font-size: 12px;
+}
+
+@media screen and (min-width: 1440px){
+    .footer {
+        height: 200px;
+        display: flex;
+        visibility: visible;
+    }
 }
