@@ -747,8 +747,7 @@ button:focus {
     width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    left:-11%;   
+    align-items: center;   
   }
 
   
@@ -789,8 +788,7 @@ button:focus {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    left:0%;   
+    align-items: center;   
   }
  }
   @media screen and (min-width: 768px){
@@ -827,7 +825,6 @@ button:focus {
 
     .product-child .photo-six {
     margin-top: 20%;
-    /* box-shadow: 7px 7px 20px rgb(0, 0, 0, 0.1); */
    }
 
 
@@ -890,6 +887,11 @@ button:focus {
     top: 0;
     left: 0;
   }
+
+
+
+
+ 
 
   .product-child .circle-one span,
   .product-child .circle-two span{
