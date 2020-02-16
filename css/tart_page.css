@@ -935,11 +935,10 @@ button:focus {
     display: block;
     width: 100%;
     height: 1px;
-    top: 123%;
-    left: left;
+    top: 155%;
     border-bottom: 1px solid rgb(167, 167, 167);
-    transform: rotate(45deg);
-    left: 69%;
+    transform: rotate(90deg);
+    left: 0%;
 
   }
 
@@ -972,11 +971,10 @@ button:focus {
     display: block;
     width: 100%;
     height: 1px;
-    top: -26%;
-    right: 65%;
+    top: -52%;
+    right: 0;
     border-bottom: 1px solid rgb(167, 167, 167);
-    transform: rotate(45deg);
-
+    transform: rotate(90deg);
   }
 
 
