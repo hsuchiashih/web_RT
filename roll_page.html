@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
   <link rel="icon" href="images/logo-title.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/animate.css">
 
   <link
     href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
@@ -165,7 +166,7 @@
         <img src="images/photo/image-01.jpg" alt="">
       </div>
 
-      <div class="about-child index-about-desc">
+      <div class="wow fadeIn about-child index-about-desc">
         <div class="about-desc-postion">
           <h3 class="index-about-desc-title">ABOUT ROLL</h3>
           <h2 class="index-about-desc-tagline-sub">柔軟、蓬鬆、奶香四溢。</h2>
@@ -178,19 +179,19 @@
           </div>
         </div>
       </div>
-      <div class="about-child photo">
+      <div class="wow fadeIn about-child photo">
         <img class="photo-two" src="images/photo/image-02.jpg" alt="">
       </div>
     </div>
     <!-- about-container-end -->
     <div class="product-container">
-      <div class="product-child">
+      <div class=" product-child">
         <div class="add-shadow">
           <img src="images/photo/image-04.jpg" alt="">
         </div>
       </div>
 
-      <div class="product-child index-product-desc">
+      <div class="wow fadeInRight product-child index-product-desc">
         <div class="product-desc-block">
           <h3 class="index-product-desc-title">法式甜點</h3>
           <div class="index-product-desc-text">
@@ -238,7 +239,7 @@
         <div class="photo-six">
           <img class="img-01" src="images/photo/image-06.jpg" alt="">
           <img class="img-02" src="images/photo/image-06.png" alt="">
-          <div class="circle-one">
+          <div class="wow pulse circle-one">
             <div class="title active">
               <p>香醇</p>
               <span>INDSIDE</span>
@@ -247,7 +248,7 @@
               <img src="images/photo/image-07.png" alt="">
             </div>
           </div>
-          <div class="circle-two">
+          <div class="wow pulse circle-two">
             <div class="titile active">
               <p>柔軟</p>
               <span>OUTSIDE</span>
@@ -257,7 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="about-us">
+        <div class="wow fadeInLeft about-us">
           <div>
             <h3>關於我們</h3>
             <p>R&T 是專門製作生乳捲與塔的專家</p>
@@ -346,7 +347,7 @@
     <div class="buy-button-block">
       <div>
         <div>
-          <a href="">
+          <a href="product.html">
             我要購買
           </a>
         </div>
@@ -363,10 +364,10 @@
       <div class="footer-link">
         <h4>網站地圖</h4>
         <ul>
-          <li><a href="#">商品介紹</a></li>
-          <li><a href="#three_principles">三大原則</a></li>
-          <li><a href="#about_rt">關於我們</a></li>
-          <li><a href="#contact_us">聯絡我們</a></li>
+          <li><a href="rt_index.html">商品介紹</a></li>
+          <li><a href="rt_index.html#three_principles">三大原則</a></li>
+          <li><a href="rt_index.html#about_rt">關於我們</a></li>
+          <li><a href="rt_index.html#contact_us">聯絡我們</a></li>
           <li><a href="roll_page.html">生乳捲</a></li>
           <li><a href="tart_page.html">塔</a></li>
         </ul>
@@ -390,13 +391,13 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick-1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="js/WOW-master/dist/wow.min.js"></script>
+
 
   <script>
+
     "use strict";
-
-
-
-
+    new WOW().init();
     $(window).on("load", function () {
       $('.menu>.for-info-1').hover(
         function () {

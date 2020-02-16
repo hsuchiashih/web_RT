@@ -35,6 +35,14 @@ header {
     position: relative;
 }
 
+
+.list-container {
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
 .logo {
     width: 153px;
     height: 41.4px;
@@ -98,7 +106,7 @@ header {
 /* **********product_list********** */
 /* **********product_list********** */
 
-.product_list .container .product{
+.product_list .product{
     flex-direction: column;
     display: flex;
     width: 68%;
@@ -137,6 +145,43 @@ header {
     width: 170px;
     margin-top: 30px;
 }
+
+.item_header{
+    display: flex;
+    /* width: 1000px; */
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 100px;
+    color: #888;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
 
 .check{
     background-color: burlywood;
@@ -297,4 +342,33 @@ input[type="submit"]{
     line-height: 40px;
     color: #fff5e0;
     font-size: 12px;
+}
+
+button{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;  
+    outline: none; 
+    background-color: #fff;  
+}
+
+.content{
+    border: 1px solid #8F6134;
+    border-radius: 20px;
+    /* width: 100px; */
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.qt,.qt-plus, .qt-minus {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    width: 30px;
+    color: #8F6134;
+    text-align: center;
 }

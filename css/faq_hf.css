@@ -20,9 +20,18 @@ body {
     background-color: #916134;
 }
 
+.mb-1{
+    margin-bottom: 1em;
+}
+
+.text-center{
+    text-align: center;
+}
+
 /* **********header********** */
 /* **********header********** */
 /* **********header********** */
+
 header {
     border-bottom: 1px solid #916134;
 }
@@ -72,6 +81,7 @@ header {
     color: rgb(253, 185, 39);
 }
 
+
 .nav-icon {
     position: absolute;
     right: 0px;
@@ -100,83 +110,23 @@ header {
     }
 
     .navbar>ul {
+        list-style-type: none;
         margin: 0;
+        padding: 0px;
+        display: flex;
     }
 }
 
-/* **********edit-password********** */
-/* **********edit-password********** */
-/* **********edit-password********** */
-.password .container .edit-password{
-    flex-direction: column;
-    width: 100%;
-    max-width: 686px;
-    margin: auto;
-    position: relative;
-    padding: 150px 0px;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.fa-circle{
-    line-height: 40px;
-    padding: 0px 5px;
-    color: #FFEECA;
-}
-
-input[type="text"]{
-    height: 40px;
-    border:none;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    width: 88%;
-    position: absolute;
-    right: 0px;
-    padding-left: 2%;
-    font-size: 1em;
-}
-
-input[type="submit"]{
-    font-size: 1em;
-}
-
-.btn{
-    text-align: center;
-    border:none;
-    margin-top: 15px;
-    padding:15px;
-    border-radius:4px;
-    width: 100%;
-    background-color: #FFEECA;
-}
-
-.btn:hover{
-    background-color: rgb(255, 208, 106);
-}
 
 
-@media screen and (min-width: 768px){
-    .password .container .edit-password{
-        width: 60%; 
-    }
-    input[type="text"]{
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 1440px){
-    input[type="text"]{
-        width: 94%;
-    }
-
-}
 
 /* **********footer********** */
 /* **********footer********** */
 /* **********footer********** */
-.footer {
+.footer{
+    /* display: none; */
     visibility: hidden;
+    height: 100vh;
 }
 
 /* #footerlogo {
@@ -269,3 +219,4 @@ input[type="submit"]{
         visibility: visible;
     }
 }
+

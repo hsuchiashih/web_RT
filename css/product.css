@@ -5,8 +5,8 @@
     height: 850px;
     margin: 0 auto;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: row; */
     align-items: center;
     
 }
@@ -34,10 +34,32 @@
     justify-content: space-around;
 
 }
+@media screen and (max-width: 375px) {
+    .roll_section1{
+        /* background-color: rgb(109, 123, 170); */
+        width: 99px;
+        height: 500px;
+        align-content: center;
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+}
 .roll{
     /* background-color: #fff; */
     width: 250px;
     height: 350px;
+}
+@media screen and (max-width: 375px) {
+    .roll{
+        /* background-color: #fff; */
+        /* width: 100%; */
+        height: 350px;
+        margin: -35px;
+    }
 }
 .zone{
     /* background-color: pink; */
@@ -61,6 +83,14 @@
     position: absolute;
     left: 20px;
 }
+@media screen and (max-width: 375px) {
+    .zone img{
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        left: 35px;
+    }
+}
 .product_price{
     font-weight: 600;
     font-size: 16px;
@@ -75,6 +105,16 @@
     height: 80px;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width: 375px) {
+    .car{
+        /* background-color: #cef011; */
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 .addtocart{
     border: 1px solid #8F6134;
@@ -153,6 +193,41 @@
     display: flex;
     justify-content: space-around;    
 }
+@media screen and (max-width: 375px) {
+    .roll_section2{
+        /* background-color: rgb(165, 178, 223); */
+        width: 99px;
+        height: 500px;
+        position: absolute;
+        top: 450px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;    
+    }
+}
+.roll_section3{
+    /* background-color: rgb(165, 178, 223); */
+    width: 990px;
+    height: 500px;
+    position: absolute;
+    top: 830px;
+    left: 150px;
+    display: flex;
+    justify-content: space-around;    
+}
+@media screen and (max-width: 375px) {
+    .roll_section3{
+        /* background-color: rgb(165, 178, 223); */
+        width: 99px;
+        height: 500px;
+        position: absolute;
+        top: 830px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;    
+    }
+}
+
 
 /** 生乳捲的css **/
 
@@ -166,7 +241,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+@media screen and (max-width: 375px) {
+    .tarts{
+        /* background-color: #a34848; */
+        width: 100%;
+        max-width: 1140px;
+        height: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .tag2{
     /* background-color: rgb(228, 248, 157); */
@@ -192,10 +280,32 @@
     justify-content: space-around;
 
 }
+@media screen and (max-width: 375px) {
+    .tart_section1{
+        /* background-color: rgb(109, 123, 170); */
+        width: 99px;
+        height: 500px;
+        align-content: center;
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+}
 .tart{
     /* background-color: #fff; */
     width: 250px;
     height: 350px;
+}
+@media screen and (max-width: 375px) {
+    .tart{
+        /* background-color: #fff; */
+        width: 250px;
+        height: 350px;
+        margin: -35px;
+    }
 }
 .tart_section2{
     /* background-color: rgb(165, 178, 223); */
@@ -206,6 +316,40 @@
     left: 150px;
     display: flex;
     justify-content: space-around;    
+}
+@media screen and (max-width: 375px) {
+    .tart_section2{
+        /* background-color: rgb(165, 178, 223); */
+        width: 99px;
+        height: 500px;
+        position: absolute;
+        top: 450px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;    
+    }
+}
+.tart_section3{
+    /* background-color: rgb(165, 178, 223); */
+    width: 990px;
+    height: 500px;
+    position: absolute;
+    top: 830px;
+    left: 150px;
+    display: flex;
+    justify-content: space-around;    
+}
+@media screen and (max-width: 375px) {
+    .tart_section3{
+        /* background-color: rgb(165, 178, 223); */
+        width: 99px;
+        height: 500px;
+        position: absolute;
+        top: 830px;
+        left: 150px;
+        display: flex;
+        justify-content: space-around;    
+    }
 }
 /********layer popup******/
 /* popup styles */
@@ -229,23 +373,40 @@ bottom: 0;
 .popup-content {
 position: absolute;
 background: #fff;
-width: 750px;
-margin: -200px 0 0 -375px;
-left: 50%;
-top: 50%;
+/* width: 750px; */
+width: 60%;
+min-width: 200px;
+min-height: 150px;
+/* margin: -200px 0 0 -375px; */
+left: 20%;
+top: 20%;
 z-index: 11;
 padding: 14px;
 display: flex;
 justify-content: center;
 align-items: center; 
-
-
 }
+/* @media screen and (max-width: 375px) {
+    .popup-content {
+        position: absolute;
+        background: #fff;
+        width: 750px;
+        margin: -200px 0 0 -375px;
+        left: 50%;
+        top: 50%;
+        z-index: 11;
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+} */
 .product_info{
 display: flex;
 flex-direction: column;
 /* align-items: center; */
 margin: 30px;
+font-size: 1em;
 }
 .close-popup {
 display: inline-block;
@@ -262,8 +423,9 @@ color: #8F6134
 
 }
 .popup-content_img{
-width: 250px;
-height: 250px;
+/* width: 250px; */
+width: 30%;
+/* height: 250px; */
 }
 
 /* Animations */
