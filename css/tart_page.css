@@ -781,6 +781,20 @@ button:focus {
   }
 
 
+  .product-child .circle-one{
+    background-color: rgb(255, 255, 255);
+    box-shadow:3px 3px 10px rgb(0, 0, 0, 0.1) ;
+    width: calc(22% *1.2);
+    height:calc(10% *1.2);
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    top: 8%;
+    left: 16%;
+    cursor: pointer;
+    
+  }
+
  @media screen and (min-width: 568px){
   .product-child .circle-one p ,.product-child .circle-two p{ 
     font-size: 4vmax; 
@@ -880,21 +894,14 @@ button:focus {
       font-size:  1.3vmax;
     }
 
+    .product-child .circle-one{
+      top: 10%;
+      left: 11%;
+    }
+
   }
 
-  .product-child .circle-one{
-    background-color: rgb(255, 255, 255);
-    box-shadow:3px 3px 10px rgb(0, 0, 0, 0.1) ;
-    width: calc(22% *1.2);
-    height:calc(10% *1.2);
-    position: absolute;
-    text-align: center;
-    border-radius: 50%;
-    top: 7%;
-    left: 2%;
-    cursor: pointer;
-    
-  }
+
   .product-child .circle-one-inside{
     position: absolute;
     top: 0;
@@ -950,8 +957,8 @@ button:focus {
     position: absolute;
     text-align: center;
     border-radius: 50%;
-    top: 40%;
-    left: 73%; 
+    top: 41%;
+    left: 53%;
     cursor: pointer;
   }
 
