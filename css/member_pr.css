@@ -189,7 +189,7 @@ header {
 }
 
 .copyright {
-    width: 100vw;
+    /* width: 100vw; */
     /* height: 40px; */
     background-color: #613E00;
     text-align: center;

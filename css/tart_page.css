@@ -39,7 +39,7 @@
   /* =======================header============== */
 
 header {
-    height: 80px;
+    /* height: 80px; */
     background-color: #F9E5E7;
     
 }
@@ -395,10 +395,13 @@ position: absolute;
   padding-left: 2.5%;
 }
 
+.active-page{
+  display: none;
+}
 
 .no-active{
     display: none;
-  }
+}
   
 .active {
       display: block;
@@ -1184,7 +1187,7 @@ button:focus {
 }
 
 .copyright {
-    width: 100vw;
+    /* width: 100vw; */
     /* height: 40px; */
     background-color: #613E00;
     text-align: center;

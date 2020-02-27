@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Roll</title>
+  <title>生乳捲 | Roll & Tart | 手作甜點工作室</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/roll_page.css">
   <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
   <link rel="icon" href="images/logo-title.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link
+  href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
+  rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -155,7 +155,7 @@
 
   <div class="video-area">
     <div class="video">
-      <video autoplay loop playsinline src="/video/video_ae.mp4"></video>
+      <video autoplay loop playsinline src="video/video_ae.mp4"></video>
     </div>
   </div>
   <!-- video-area-end -->
@@ -399,82 +399,185 @@
     "use strict";
     new WOW().init();
     $(window).on("load", function () {
-      $('.menu>.for-info-1').hover(
+      // $('.menu>.for-info-1').hover(
+      //   function () {
+      //     $(".info-1").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-1").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+      // $('.menu>.for-info-2').hover(
+      //   function () {
+      //     $(".info-2").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-2").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+      // $('.menu>.for-info-3').hover(
+      //   function () {
+      //     $(".info-3").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-3").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+      // $('.menu>.for-info-4').hover(
+      //   function () {
+      //     $(".info-4").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-4").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+      // $('.menu>.for-info-5').hover(
+      //   function () {
+      //     $(".info-5").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-5").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+
+      // $('.menu>.for-info-6').hover(
+      //   function () {
+      //     $(".info-6").fadeIn();
+      //     $(".active-page").removeClass("active");
+      //     $(".active-page").addClass("no-active");
+      //   },
+      //   function () {
+      //     $(".info-6").hide();
+      //     $(".active-page").addClass("active");
+      //     $(".active-page").removeClass("no-active");
+      //   }
+      // );
+
+      $('.item1').hover(
         function () {
-          $(".info-1").fadeIn();
+          $(".info-1").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-1").hide();
+          $(".info-1").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
-      $('.menu>.for-info-2').hover(
+      $('.item2').hover(
         function () {
-          $(".info-2").fadeIn();
+          $(".info-2").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-2").hide();
+          $(".info-2").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
-      $('.menu>.for-info-3').hover(
+      $('.item3').hover(
         function () {
-          $(".info-3").fadeIn();
+          $(".info-3").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-3").hide();
+          $(".info-3").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
-      $('.menu>.for-info-4').hover(
+      $('.item4').hover(
         function () {
-          $(".info-4").fadeIn();
+          $(".info-4").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-4").hide();
+          $(".info-4").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
-      $('.menu>.for-info-5').hover(
+      $('.item5').hover(
         function () {
-          $(".info-5").fadeIn();
+          $(".info-5").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-5").hide();
+          $(".info-5").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
 
-      $('.menu>.for-info-6').hover(
+      $('.item6').hover(
         function () {
-          $(".info-6").fadeIn();
+          $(".info-6").addClass("active");
+          // $(".active-page").hide();
+
           $(".active-page").removeClass("active");
-          $(".active-page").addClass("no-active");
+          // $(".active-page").addClass("no-active");
         },
         function () {
-          $(".info-6").hide();
+          $(".info-6").removeClass("active");
+          // $(".active-page").show();
+
           $(".active-page").addClass("active");
-          $(".active-page").removeClass("no-active");
+          // $(".active-page").removeClass("no-active");
         }
       );
 
